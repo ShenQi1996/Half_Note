@@ -2,7 +2,7 @@
 
 ## 1. Background and Overview
 
-Plano is a virtual piano that when user click on it, it will play a sound.   
+Plano is a music maker that when user click on it, it will play a sound.   
 
 
 ## 2 Functionlity and MVP
