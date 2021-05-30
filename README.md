@@ -38,5 +38,5 @@ Day4: Css and animation when user click on the keyboard
 
 ## 6.Bonus Features
 
-user about to save songs / able to turn into a rhythm game 
+user about to save songs / able to turn into a rhythm game / about to select different instruments  
 
