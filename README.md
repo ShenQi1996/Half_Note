@@ -1,4 +1,4 @@
-# Piano
+# Half Note
 
 ## 1. Background and Overview
 
