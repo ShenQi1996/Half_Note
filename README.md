@@ -14,7 +14,8 @@ The User will be able to:
   
 ## 3.Wireframes  
 
-![piano](https://user-images.githubusercontent.com/68937006/120118318-f1570d00-c15f-11eb-8370-0cea28462659.png)
+![Capture](https://user-images.githubusercontent.com/68937006/120851682-28a23100-c547-11eb-95f2-2061cf23417f.PNG)
+
 
 ## 4.Architectre and Technologies
 
