@@ -203,4 +203,9 @@ header p {
   color: black;
   font-size: 20px;
   margin: 10px;
+  transition: color 1s ease;
+}
+
+a:hover {
+  color: lightpink;
 }
