@@ -32,6 +32,8 @@ window.addEventListener("load", () => {
   //Create animation
   const createBubbles = idx => {
     const bubble = document.createElement("div");
+    bubble.innerHTML = "🎵";
+
     visual.append(bubble);
     bubble.style.backgroundColor = colors[idx];
     bubble.style.animation = `${jumps[idx]} 1s ease`;
