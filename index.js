@@ -16,6 +16,12 @@ window.addEventListener("load", () => {
     "#d3d160",
     "#7160d3",
     "#60bcd3",
+    "#0bad21",
+    "#207a91",
+    "#f0de3f",
+    "#d61b9e",
+    "#af151d",
+    "#d39d60",
   ];
   const jumps = ["jump1", "jump2", "jump3", "jump4", "jump5", "jump6"];
   //Adding sounds
@@ -36,7 +42,7 @@ window.addEventListener("load", () => {
 
     visual.append(bubble);
     bubble.style.backgroundColor = colors[idx];
-    bubble.style.animation = `${jumps[idx]} 1s ease`;
+    bubble.style.animation = `out 1s ease`;
     count++;
     if (count > 70) {
       bubble.addEventListener("animationend", function () {
@@ -93,6 +99,8 @@ window.addEventListener("load", () => {
       if (currentTrackIndex < play_list.length) {
         play_audio.src = play_list[currentTrackIndex];
         play_audio.play();
+        play_audio.playbackRate = 1.5;
+        console.log(play_audio.playbackRate);
         if (currentTrackIndex == play_list.length - 1) {
           play.innerHTML = "play";
           play.className = "play_buttom";

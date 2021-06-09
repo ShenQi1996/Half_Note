@@ -61,8 +61,26 @@ header p {
 .keyboard6 {
   background: #60bcd3;
 }
+.keyboard7 {
+  background: #0bad21;
+}
+.keyboard8 {
+  background: #207a91;
+}
+.keyboard9 {
+  background: #f0de3f;
+}
+.keyboard10 {
+  background: #d61b9e;
+}
+.keyboard11 {
+  background: #af151d;
+}
+.keyboard12 {
+  background: #d39d60;
+}
 
-@keyframes jump1 {
+@keyframes out {
   0% {
     bottom: 0%;
     left: 0%;
@@ -76,7 +94,7 @@ header p {
     left: 45%;
   }
 }
-@keyframes jump2 {
+/* @keyframes jump2 {
   0% {
     bottom: 0%;
     left: 20%;
@@ -145,7 +163,7 @@ header p {
     bottom: 0%;
     left: 5%;
   }
-}
+} */
 
 .visual > div {
   position: relative;
