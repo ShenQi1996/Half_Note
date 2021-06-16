@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Half Note</title>
+    <link rel="icon" href="https://illustoon.com/photo/946.png" type="image/x-icon"/>
 </head>
 <body>
     <div class="app">
@@ -18,8 +19,8 @@
             <p>Create music without thinking of it</p>
         </header>
         <div class="personal_info">
-            <a href="https://github.com/ShenQi1996">Github</a>
-            <a href="https://www.linkedin.com/in/shenqi1993">Linkedin</a>
+            <a href="https://github.com/ShenQi1996" target="_blank" >Github</a>
+            <a href="https://www.linkedin.com/in/shenqi1993" target="_blank">Linkedin</a>
         </div>
         <div class="visual">
             
@@ -28,6 +29,7 @@
             <button class="play_buttom">play</button>
             <audio id="test" class="" src=""></audio>
             <button class="delete_buttom">Delete Notes</button>
+            <button class="modal_btn">How to play</button>
             <button class="on_off">on</button>
         </div>
         <div class="keyboard">
@@ -70,6 +72,24 @@
         </div>
     </div>
 
+    <div class="modal_bg">
+        <div class="modal">
+            <h2>How to use Half Note</h2>
+            Half Note is a music maker. Click on the colorful tiles to play sounds.
+            <ul>
+                <li>
+                    Click on the play button to play all the sounds you have clicked before
+                </li>
+                <li>
+                    Click on the delete note button to delete the more recent sound
+                </li>
+                <li>
+                    Click on the on/off button to mute or unmute the sound
+                </li>
+            </ul>
+            <span class="modal_close">X</span>
+        </div>
+    </div>
 
 
 
