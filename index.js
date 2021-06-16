@@ -64,6 +64,7 @@ window.addEventListener("load", () => {
     visual.removeChild(bubble[bubble.length - 1]);
     count--;
     play_list.pop();
+    notes.pop();
   });
 
   //sound on or off
