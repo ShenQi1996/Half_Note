@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 .app {
   height: 100vh;
@@ -43,7 +44,14 @@ header p {
   height: 100px;
   width: 100px;
   flex: 1;
+  transition: all 300ms;
+  cursor: pointer;
 }
+
+.keyboard > div:hover {
+  transform: scale(1.5);
+}
+
 .keyboard1 {
   background: #60d394;
 }
@@ -201,7 +209,8 @@ header p {
 .delete_buttom,
 .on_off,
 .play_buttom,
-.modal_btn {
+.modal_btn,
+.delete_all {
   border: none;
   padding: 10px 20px;
   /* border-radius: 7%; */
@@ -218,7 +227,8 @@ header p {
 .delete_buttom:hover,
 .on_off:hover,
 .play_buttom:hover,
-.modal_btn:hover {
+.modal_btn:hover,
+.delete_all:hover {
   /* background: linear-gradient(to right, lightblue, rgb(231, 231, 60)); */
   background-color: lightgreen;
 }
@@ -233,9 +243,6 @@ header p {
 
 a:hover {
   color: lightpink;
-}
-
-.modal_btn {
 }
 
 .modal_bg {
@@ -265,15 +272,25 @@ a:hover {
 }
 .modal {
   position: relative;
+  background-image: url("./images/modal.jpg");
   background-color: white;
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 50%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
   padding: 10px 20px;
+  background-size: cover;
+  font-weight: bolder;
+  /* color: white; */
+  font-size: 20px;
+  border-radius: 10px;
 }
 .modal_list {
   padding: 10px;
+  list-style: none;
+}
+.modal_list li {
+  padding: 5px;
 }

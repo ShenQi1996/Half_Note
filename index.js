@@ -8,6 +8,7 @@ window.addEventListener("load", () => {
   const how_to_btn = document.querySelector(".modal_btn");
   const modalBg = document.querySelector(".modal_bg");
   const close = document.querySelector(".modal_close");
+  const delete_all = document.querySelector(".delete_all");
   let count = 0;
   let play_list = [];
   let currentTrackIndex = 0;
@@ -67,17 +68,28 @@ window.addEventListener("load", () => {
     notes.pop();
   });
 
+  //delete all btn
+  delete_all.addEventListener("click", function () {
+    const bubble = document.querySelectorAll(".visual div");
+    for (let i = 0; i < bubble.length; i++) {
+      visual.removeChild(bubble[i]);
+      play_list.pop();
+      notes.pop();
+    }
+    count = 0;
+  });
+
   //sound on or off
   on_off.addEventListener("click", function () {
     sounds.forEach(sound => {
       if (sound.muted) {
         sound.muted = false;
         test.muted = false;
-        on_off.innerHTML = "on";
+        on_off.innerHTML = "On";
       } else {
         sound.muted = true;
         test.muted = true;
-        on_off.innerHTML = "off";
+        on_off.innerHTML = "Off";
       }
     });
   });
