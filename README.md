@@ -18,12 +18,12 @@ The User will be able to:
 ![half3](https://user-images.githubusercontent.com/68937006/122250528-bc54f500-ce97-11eb-86be-67580086724f.PNG)
 
 
-2. user about to trun sound on or off.
+2. user about to turn the sound on or off.
 
 ![halfsound](https://user-images.githubusercontent.com/68937006/122250809-fcb47300-ce97-11eb-8ef1-e8113eb8b453.PNG)
 
 
-3. when user click on the keyboard animation will show the key is been clicked.
+3. when the user clicks on the keyboard animation will show the key is been clicked.
 
 ![halfan](https://user-images.githubusercontent.com/68937006/122251093-35544c80-ce98-11eb-80fa-475fb5e3cf8c.PNG)
 
@@ -40,20 +40,20 @@ The User will be able to:
 
 ## 3.Architectre and Technologies
 
-Project will use:
+The project will use:
 
 1. JavaScript
 2. Html
 3. Audio
-4. Css
+4. CSS
 
 ## 4.Implementaion details
   ### keyboard 
-   For keyboard I use HTML audio tag to play and store sounds 
+   For the keyboard, I use HTML audio tag to play and store sounds 
     ![halfkeyboard](https://user-images.githubusercontent.com/68937006/122252494-65501f80-ce99-11eb-8338-6970f18b37dc.PNG)
     
   ### Animation
-   Animation I use JavaScript and Css to create the bubble moving affect
+  Animation I use JavaScript and CSS to create the bubble moving effect
     ![halfanin](https://user-images.githubusercontent.com/68937006/122253086-dc85b380-ce99-11eb-935f-fea977338d46.PNG)
 
 ## 5.Bonus Features
