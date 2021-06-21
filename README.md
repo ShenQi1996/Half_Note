@@ -50,11 +50,68 @@ The project will use:
 ## 4.Implementaion details
   ### keyboard 
    For the keyboard, I use HTML audio tag to play and store sounds 
-    ![halfkeyboard](https://user-images.githubusercontent.com/68937006/122252494-65501f80-ce99-11eb-8338-6970f18b37dc.PNG)
+   ``` 
+   <div class="keyboard">
+            <div class="keyboard1">
+                <audio class="sound" src="./sounds/68437__pinkyfinger__piano-a.wav"></audio>
+            </div>
+            <div class="keyboard2">
+                <audio class="sound" src="./sounds/68438__pinkyfinger__piano-b.wav"></audio>
+            </div>
+            <div class="keyboard3">
+                <audio class="sound" src="./sounds/68439__pinkyfinger__piano-bb.wav"></audio>
+            </div>
+            <div class="keyboard4">
+                <audio class="sound" src="./sounds/68440__pinkyfinger__piano-c.wav"></audio>
+            </div>
+            <div class="keyboard5">
+                <audio class="sound" src="./sounds/68441__pinkyfinger__piano-c.wav"></audio>
+            </div>
+            <div class="keyboard6">
+                <audio class="sound" src="./sounds/68442__pinkyfinger__piano-d.wav"></audio>
+            </div>
+            <div class="keyboard7">
+                <audio class="sound" src="./sounds/68443__pinkyfinger__piano-e.wav"></audio>
+            </div>
+            <div class="keyboard8">
+                <audio class="sound" src="./sounds/68444__pinkyfinger__piano-eb.wav"></audio>
+            </div>
+            <div class="keyboard9">
+                <audio class="sound" src="./sounds/68445__pinkyfinger__piano-f.wav"></audio>
+            </div>
+            <div class="keyboard10">
+                <audio class="sound" src="./sounds/68446__pinkyfinger__piano-f.wav"></audio>
+            </div>
+            <div class="keyboard11">
+                <audio class="sound" src="./sounds/68447__pinkyfinger__piano-g.wav"></audio>
+            </div>
+            <div class="keyboard12">
+                <audio class="sound" src="./sounds/68448__pinkyfinger__piano-g.wav"></audio>
+            </div>
+        </div>
+   ```
     
   ### Animation
   Animation I use JavaScript and CSS to create the bubble moving effect
-    ![halfanin](https://user-images.githubusercontent.com/68937006/122253086-dc85b380-ce99-11eb-935f-fea977338d46.PNG)
+  ```
+    const createBubbles = idx => {
+    const bubble = document.createElement("div");
+    bubble.innerHTML = "🎵";
+
+    visual.append(bubble);
+    bubble.style.backgroundColor = colors[idx];
+    bubble.style.animation = `out 1s ease`;
+    notes.push(bubble);
+    count++;
+    if (count > 70) {
+      bubble.addEventListener("animationend", function () {
+        visual.removeChild(this);
+        count--;
+        play_list.pop();
+      });
+    }
+  };
+  ```
 
 ## 5.Bonus Features
 
