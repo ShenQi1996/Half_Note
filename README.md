@@ -115,4 +115,4 @@ The project will use:
 
 ## 5.Bonus Features
 
-add different instruments options
+Add different instruments options
